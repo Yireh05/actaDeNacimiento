@@ -216,7 +216,7 @@ $fecha_nacimiento_fmt = strftime("%d de %B de %Y", strtotime($fecha_nacimiento))
     <div class="leyenda">
       La presente copia certificada del acta de nacimiento es válida conforme a la legislación mexicana vigente.
     </div>
-
+</div>
   </div>
 </body>
 </html>
