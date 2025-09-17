@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Acta de Nacimiento</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario para Acta de Nacimiento</h1>
+        <form action="acta.php" method="post">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Datos Generales</h3></div>
+        <div class="panel-body">
+            CURP: <input type="text" name="curp" class="form-control" required><br>
+            Número de Certificado de Nacimiento: <input type="text" name="certificado" class="form-control" required><br>
+            Entidad de Registro: <input type="text" name="entidad" class="form-control" required><br>
+            Municipio de Registro: <input type="text" name="municipio" class="form-control" required><br>
+            Oficialía: <input type="text" name="oficialia" class="form-control" required><br>
+            Fecha de Registro: <input type="date" name="fecha_registro" class="form-control" required><br>
+            Libro: <input type="text" name="libro" class="form-control" required><br>
+            Número de Acta: <input type="text" name="num_acta" class="form-control" required><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Datos de la Persona Registrada</h3></div>
+        <div class="panel-body">
+            Nombre(s): <input type="text" name="nombre" class="form-control" required><br>
+            Primer Apellido: <input type="text" name="primer_apellido" class="form-control" required><br>
+            Segundo Apellido: <input type="text" name="segundo_apellido" class="form-control"><br>
+            Sexo:
+            <select name="sexo" class="form-control" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select><br>
+            Fecha de Nacimiento: <input type="date" name="fecha_nacimiento" class="form-control" required><br>
+            Lugar de Nacimiento: <input type="text" name="lugar_nacimiento" class="form-control" required><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Datos de Filiación - Padre</h3></div>
+        <div class="panel-body">
+            Nombre(s): <input type="text" name="padre_nombre" class="form-control" required><br>
+            Primer Apellido: <input type="text" name="padre_primer_apellido" class="form-control" required><br>
+            Segundo Apellido: <input type="text" name="padre_segundo_apellido" class="form-control"><br>
+            Nacionalidad: <input type="text" name="padre_nacionalidad" class="form-control" required><br>
+            CURP: <input type="text" name="padre_curp" class="form-control"><br>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h3>Datos de Filiación - Madre</h3></div>
+        <div class="panel-body">
+            Nombre(s): <input type="text" name="madre_nombre" class="form-control" required><br>
+            Primer Apellido: <input type="text" name="madre_primer_apellido" class="form-control" required><br>
+            Segundo Apellido: <input type="text" name="madre_segundo_apellido" class="form-control"><br>
+            Nacionalidad: <input type="text" name="madre_nacionalidad" class="form-control" required><br>
+            CURP: <input type="text" name="madre_curp" class="form-control"><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Anotaciones y certificación siguen en fila única -->
+   <div class="col-md-6">
+     <div class="panel panel-default">
+       <div class="panel-heading"><h3>Anotaciones Marginales</h3></div>
+          <div class="panel-body">
+            <textarea name="anotaciones" rows="5" class="form-control" placeholder="Escribe anotaciones aquí..."></textarea>
+          </div>
+      </div>
+    </div>
+<div class="col-md-6">
+  <div class="panel panel-default">
+    <div class="panel-heading"><h3>Certificación</h3></div>
+    <div class="panel-body">
+      <textarea name="certificacion" rows="6" class="form-control" placeholder="Texto de certificación..."></textarea>
+    </div>
+  </div>
+</div>
+  <input type="submit" class="btn btn-success" value="Generar Acta">
+</form>
+</div>
+</body>
+</html>

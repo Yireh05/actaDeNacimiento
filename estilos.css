@@ -1,0 +1,103 @@
+/* estilos.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 30px;
+  background: #f8f8f8;
+}
+.border {
+  position: relative;
+  border: 3px solid #ffffff;
+  padding: 40px;
+  background: url('img/acta.png') no-repeat center top;
+  background-size: 100% auto;
+  width: 780px;
+  margin: auto;
+  min-height: 1000px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  border-color: #000000;
+}
+
+th { /* titulos*/
+  border-bottom: 1px solid #afacac;
+  padding: 5px 0;
+  font-weight: normal;
+  color: #000000;
+  width: 40%;
+  background-color: hwb(210 70% 25%);
+}
+
+td { /* datos*/
+  padding: 1px 0;
+  font-weight: normal; /*bold*/
+  color: #000000;
+  width: 40%;
+  /*vertical-align: bottom;*/
+
+}
+
+.table-bordered {
+  border: 1px solid #c0b5b5;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+thead {
+  background-color: #d9d9d9
+}
+
+.firma {
+  float: right;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.leyenda {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 120px;
+  clear: both;
+}
+
+.tabla-datos {
+  width: 35%;
+  margin: 0 auto 15px auto;
+  font-size: 0.6em;
+}
+
+.tabla-invertida th {
+  background-color: transparent;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.tabla-invertida td {
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+}     
